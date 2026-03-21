@@ -1,0 +1,65 @@
+/* ============================================
+   Scroll reveals, mouse gradient, parallax,
+   hover transitions
+   ============================================ */
+
+/* --- Scroll reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children in groups */
+.reveal-group .reveal:nth-child(1) { transition-delay: 0s; }
+.reveal-group .reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal-group .reveal:nth-child(3) { transition-delay: 0.15s; }
+.reveal-group .reveal:nth-child(4) { transition-delay: 0.2s; }
+.reveal-group .reveal:nth-child(5) { transition-delay: 0.25s; }
+.reveal-group .reveal:nth-child(6) { transition-delay: 0.3s; }
+.reveal-group .reveal:nth-child(7) { transition-delay: 0.35s; }
+.reveal-group .reveal:nth-child(8) { transition-delay: 0.4s; }
+
+/* --- Mouse-following gradient --- */
+.mouse-glow {
+  position: relative;
+}
+
+.mouse-glow .glow-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.mouse-glow:hover .glow-overlay {
+  opacity: 1;
+}
+
+.mouse-glow > *:not(.glow-overlay) {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Parallax --- */
+.parallax-bg::before {
+  transform: translateY(var(--parallax-y, 0));
+  will-change: transform;
+}
+
+/* --- Button hover --- */
+.cta-btn:hover {
+  background: #d4b88e;
+  transform: translateY(-1px);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}

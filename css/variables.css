@@ -1,0 +1,37 @@
+:root {
+  /* Backgrounds */
+  --bg-primary: #0b0b0b;
+  --bg-alt: #0f0f0f;
+  --bg-deep: #080808;
+  --bg-surface: #151515;
+
+  /* Text */
+  --text-primary: #f0ece6;
+  --text-body: #e8e4df;
+  --text-secondary: #888888;
+  --text-tertiary: #666666;
+
+  /* Accent */
+  --accent: #c9a87c;
+  --accent-secondary: #997a5c;
+  --accent-glow: rgba(180, 120, 60, 0.06);
+  --accent-glow-subtle: rgba(180, 120, 60, 0.03);
+
+  /* Borders */
+  --border: #1a1a1a;
+  --border-light: #1d1d1d;
+  --border-surface: #222222;
+
+  /* Typography */
+  --font-display: 'Instrument Serif', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Spacing */
+  --section-padding: 88px 40px;
+  --section-padding-mobile: 64px 20px;
+  --container-max: 900px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+}

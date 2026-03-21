@@ -1,0 +1,100 @@
+/* ============================================
+   Desktop overrides (min-width: 768px)
+   Mobile-first: base styles are in sections.css
+   ============================================ */
+
+@media (min-width: 768px) {
+  section {
+    padding: var(--section-padding);
+  }
+
+  /* Hero */
+  .hero {
+    padding: 120px 40px 100px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  /* Headings */
+  .sec-heading {
+    font-size: 32px;
+  }
+
+  /* Credentials */
+  .credentials {
+    padding: 40px;
+  }
+
+  .cred-inner {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .cred-num {
+    font-size: 42px;
+  }
+
+  /* Problem */
+  .problem-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+
+  /* Solutions */
+  .sol-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 32px;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  /* Why Me */
+  .why-me-heading {
+    font-size: 36px;
+  }
+
+  .why-me-text p {
+    font-size: 16px;
+  }
+
+  .why-me-text p:first-child {
+    font-size: 18px;
+  }
+
+  .why-me-text p:last-child {
+    font-size: 16px;
+  }
+
+  /* Sectors */
+  .sectors {
+    padding: 72px 40px;
+  }
+
+  .sector-tags {
+    gap: 12px;
+  }
+
+  /* CTA Final */
+  .cta-section {
+    padding: 100px 40px;
+  }
+
+  .cta-heading {
+    font-size: 36px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 32px 40px;
+  }
+
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
