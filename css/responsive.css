@@ -13,6 +13,18 @@
     padding: 120px 40px 100px;
   }
 
+  .hero-photo {
+    top: 0;
+    right: 10%;
+    bottom: -40px;
+    left: auto;
+    height: auto;
+    width: 55%;
+    background-position: right bottom;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.8) 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.8) 100%);
+  }
+
   .hero h1 {
     font-size: 52px;
   }

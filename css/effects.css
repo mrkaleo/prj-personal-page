@@ -43,7 +43,7 @@
   opacity: 1;
 }
 
-.mouse-glow > *:not(.glow-overlay) {
+.mouse-glow > *:not(.glow-overlay):not(.hero-photo) {
   position: relative;
   z-index: 1;
 }
