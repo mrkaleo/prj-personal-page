@@ -2,22 +2,41 @@
 
 ## O que é este projeto
 
-Página pessoal do Leonardo. Landing page individual com informações profissionais, portfólio e links de contato.
+Página pessoal do Leonardo Chaves. Landing page consultiva e persuasiva com foco em conversão para WhatsApp (diagnóstico gratuito).
 
 ## Arquitetura
 
 ```
 prj-personal-page/
-├── CLAUDE.md          # Este arquivo
-├── index.html         # Página principal
-├── assets/            # Imagens, ícones, fontes
-├── css/               # Estilos
-└── js/                # Scripts
+├── CLAUDE.md                    # Este arquivo
+├── index.html                   # Página principal (8 seções)
+├── assets/
+│   ├── leo-apresentacao.webp    # Foto hero (duotone gold)
+│   └── leo-pensativo.webp       # Foto seção "Por que eu" (grayscale)
+├── css/
+│   ├── variables.css            # Design tokens (cores, fontes, spacing)
+│   ├── reset.css                # Reset + base styles
+│   ├── layout.css               # Container, grid, section spacing
+│   ├── sections.css             # Estilos por seção (mobile-first)
+│   ├── effects.css              # Scroll reveals, mouse gradient, parallax
+│   └── responsive.css           # Desktop overrides (≥768px)
+├── js/
+│   └── main.js                  # IntersectionObserver + mousemove + parallax
+├── politicas-de-privacidade/
+│   ├── index.html               # Página de Política de Privacidade
+│   └── legal.css                # Estilos compartilhados das páginas legais
+├── termos-de-uso/
+│   ├── index.html               # Página de Termos de Uso
+│   └── legal.css                # Estilos compartilhados das páginas legais
+└── docs/superpowers/
+    ├── specs/                   # Design specs
+    └── plans/                   # Implementation plans
 ```
 
 ## Stack
 
-- **HTML/CSS/JS** puro (sem frameworks)
+- **HTML/CSS/JS** puro (sem frameworks, sem build tools)
+- **Google Fonts:** Instrument Serif (display) + DM Sans (body)
 - Deploy via **Cloudflare Pages** (conectado ao GitHub)
 - Repo: `mrkaleo/prj-personal-page`
 
@@ -29,58 +48,59 @@ Este projeto faz parte da **lps-agency**. Skills de marketing, copywriting e fro
 
 - Commits e código em **inglês**
 - Copy/conteúdo da página em **português brasileiro**
-- Usar as skills de `copywriting` e `page-cro` para textos e otimização de conversão
-- Usar a skill de `frontend-design` para layout e estética
+- **SEMPRE** carregar as skills de `copywriting` e `frontend-design` antes de qualquer trabalho de design ou copy
+- Usar a skill de `page-cro` para otimização de conversão
+- **Não commitar nem deployar sem aprovação explícita do Leonardo**
 
 ## Deploy
 
 - Push para `main` no GitHub → deploy automático via Cloudflare Pages
+- URL: leonardochaves.com.br
 
-## Design da Página (em andamento)
+## Design da Página (implementado)
 
-### Decisões tomadas
+### Identidade Visual
 
-- **Abordagem:** Authority-First — Hero com impacto → Números → Soluções → Setores → CTA
-- **Tom de voz:** Executivo e direto. Sem floreios, sem tom de "missão/propósito"
-- **CTA principal:** WhatsApp
-- **Tema:** Dark, com imagens incorporadas ao background das seções
-- **Efeitos CSS:** Sutis, que expressem tecnologia sem exagero. Grid sutil animado no hero
+- **Abordagem:** Consultiva e persuasiva
+- **Tom de voz:** Executivo, direto e provocativo. Sem floreios, sem tom de "missão/propósito"
+- **Tema:** Dark editorial com accent dourado/bronze, inspirado no Claude (Anthropic)
+- **Paleta:** Background #0b0b0b/#0f0f0f, accent #c9a87c/#997a5c, texto #f0ece6/#e8e4df
+- **Tipografia:** Instrument Serif (headlines) + DM Sans (corpo)
+- **Efeitos CSS:** Scroll-triggered reveals, mouse-following gradient, parallax sutil
 - **Requisito visual:** NÃO deve parecer que foi criada por IA
-- **Sem animação de contagem** nos números
+- **CTAs:** Nunca usar o nome do Leonardo. CTA principal: "Solicitar diagnóstico"
+- **Números:** Sem animação de contagem (estáticos)
+- **Breakpoint:** 768px (mobile-first)
 
-### Seções aprovadas
+### Seções (8 total)
 
-**1. Hero**
-- Nome: "Leonardo Chaves"
-- Headline: "IA + Automação para empresas que precisam escalar com menos" (sem ponto final)
-- Subtitle: "20+ anos em tecnologia. Head de Produtos. Hoje implemento IA onde ela realmente faz diferença: na operação."
-- CTA: "Falar com Leonardo →" (WhatsApp)
-- Background: imagem sutil de circuitos/rede neural em baixa opacidade + grid animado CSS
+1. **Hero** — Eyebrow "Consultoria em IA & Automação" + headline "Sua operação pode fazer *mais com menos*. Eu mostro como." + foto duotone gold à direita + CTA WhatsApp
+2. **Credenciais** — 25+ empresas / 40% redução custos / 20+ anos
+3. **O cenário** — Seção de problema/dor com 3 sintomas
+4. **Soluções** — "O que muda" — 8 itens em lista editorial (Hub, CRM, WhatsApp, Marketing, Dashboard, Integração, Consultoria, Treinamento)
+5. **Por que eu** — Texto provocativo do Leonardo com foto grayscale à direita
+6. **Setores atendidos** — Tags (Financeiro, Varejo, Coworking, Clínicas, Agências, Coaches, Infoprodutores)
+7. **CTA final** — "Quer saber o que a IA muda na sua operação?" + diagnóstico gratuito
+8. **Rodapé** — E-mail, Instagram, LinkedIn + links legais
 
-**2. Números/Resultados**
-- "25+" empresas atendidas com soluções em IA
-- "40%" de redução média de custos em operações repetitivas
-- "20+" anos desenvolvendo software e liderando times de tecnologia
-- Layout: 3 blocos lado a lado, tipografia grande, sem cards/caixas
-- Background: imagem escura corporativa/tech em baixa opacidade
-- SEM animação de contagem
+### Páginas adicionais
 
-### Seções pendentes
-
-- **3. Soluções** (lista resumida — Hub de Atendimento, CRM, WhatsApp, Automação Marketing, Dashboard, Consultoria Técnica, Integração, Treinamento IA)
-- **4. Setores atendidos** (financeiro, varejo/supermercadista, coworking, clínicas médicas, agência de marketing, coaches, infoprodutores)
-- **5. CTA final**
+- `/politicas-de-privacidade` — Política de Privacidade (LGPD)
+- `/termos-de-uso` — Termos de Uso
 
 ### Informações do Leonardo (para copy)
 
 - **Nome completo:** Leonardo Chaves Moreira
 - **Atuação:** Consultor de Transformação Digital com IA (desde jan/2025)
-- **Antes:** Fundador Zelar Digital (2022-2025), E-Do Lab (2019-2021), Mastermaq Software 12 anos (até Head of Product Development)
+- **Antes:** Fundador Zelar Digital (2022-2025), E-Do Lab (2019-2021), Mastermaq Software ~15 anos (até Head of Product Development)
 - **Formação:** FGV — Gestão Empresarial, Controladoria, Administração
+- **CNPJ:** 61.679.884/0001-47
 - **Cliente ideal:** Empresas de médio porte que precisam modernizar processos com IA
-- **Resultado principal:** Redução de custos operacionais. Diagnóstico → solução → implementação. Operações mais escaláveis, enxutas, com mais qualidade
-- **Diferencial:** Usa Claude Code/Cowork como componentes da solução (skills, agentes, repositórios compartilhados)
-- **Não usar:** "Consultoria" na headline; "Ex-Diretor de Produtos" (usar "Head de Produtos")
+- **Resultado principal:** Redução de custos operacionais. Diagnóstico → solução → implementação
+- **Diferencial:** 15 anos dentro de operações de software, não é "especialista de curso de fim de semana"
+- **Não usar:** nome do Leonardo em CTAs; "Ex-Diretor de Produtos" (usar "Head de Produtos" fora de contexto narrativo)
 - **WhatsApp:** 31996830378
 - **Email:** contato@leonardochaves.com.br
-- **Site atual:** leonardochaves.com.br
+- **Instagram:** @eusouleochaves
+- **LinkedIn:** linkedin.com/in/eusouleochaves
+- **Site:** leonardochaves.com.br

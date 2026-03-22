@@ -8,8 +8,8 @@
   /* Text */
   --text-primary: #f0ece6;
   --text-body: #e8e4df;
-  --text-secondary: #888888;
-  --text-tertiary: #666666;
+  --text-secondary: #999999;
+  --text-tertiary: #777777;
 
   /* Accent */
   --accent: #c9a87c;
@@ -23,8 +23,8 @@
   --border-surface: #222222;
 
   /* Typography */
-  --font-display: 'Instrument Serif', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-display: Georgia, "Times New Roman", Times, serif;
+  --font-body: Georgia, "Times New Roman", Times, serif;
 
   /* Spacing */
   --section-padding: 88px 40px;
