@@ -97,7 +97,7 @@ Este projeto faz parte da **lps-agency**. Skills de marketing, copywriting e fro
 - **CNPJ:** 61.679.884/0001-47
 - **Cliente ideal:** Empresas de médio porte que precisam modernizar processos com IA
 - **Resultado principal:** Redução de custos operacionais. Diagnóstico → solução → implementação
-- **Diferencial:** 15 anos dentro de operações de software, não é "especialista de curso de fim de semana"
+- **Diferencial:** Mais de 20 anos dentro de operações de software, não é "especialista de curso de fim de semana"
 - **Não usar:** nome do Leonardo em CTAs; "Ex-Diretor de Produtos" (usar "Head de Produtos" fora de contexto narrativo)
 - **WhatsApp:** 31996830378
 - **Email:** contato@leonardochaves.com.br
